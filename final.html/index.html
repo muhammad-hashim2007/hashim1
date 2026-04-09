@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Just One Question ❤️</title>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: linear-gradient(to right, #ffccd5, #ffe6f0);
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      margin-top: 100px;
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #444;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      margin: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+    }
+
+    #yesBtn {
+      background-color: #ff4d6d;
+      color: white;
+      position: absolute;
+    }
+
+    #noBtn {
+      background-color: #28a745;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Kashaf ❤️</h1>
+  <h2>Will you ever leave me? 💔</h2>
+
+  <button id="yesBtn" onmouseover="moveButton()">Yes 😢</button>
+  <button id="noBtn" onclick="goToGame()">No ❤️</button>
+
+  <script>
+    const yesBtn = document.getElementById("yesBtn");
+
+    function moveButton() {
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 50);
+
+      yesBtn.style.left = x + "px";
+      yesBtn.style.top = y + "px";
+    }
+
+    function goToGame() {
+      window.location.href = "kashaf.html";
+    }
+  </script>
+
+</body>
+</html>
